@@ -32,10 +32,12 @@ public class LifeController : MonoBehaviour
     {
         _maxHp = Mathf.Max(1, maxHp);
 
-        SetHp(_currentHp);
+        SetHp(_maxHp);
     }
 
     public void AddHp(int amount) => SetHp(_currentHp + amount);
+
+    public void TakeDamage(int damage) => SetHp(_currentHp - damage);
 
     void Start()
     {
