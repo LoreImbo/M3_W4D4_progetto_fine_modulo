@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    [SerializeField] private GameObject weaponPrefab;  // Prefab dell'arma da instanziare
+    [SerializeField] private GameObject weaponPrefab;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

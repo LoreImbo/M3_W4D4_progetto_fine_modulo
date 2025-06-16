@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
         if (_player == null)
         {
             SetTargetToPlayer();
+            return;
         }
 
         Vector2 direction = (_player.position - transform.position).normalized;

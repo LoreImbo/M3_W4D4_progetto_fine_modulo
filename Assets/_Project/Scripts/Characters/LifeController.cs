@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LifeController : MonoBehaviour
 {
@@ -22,7 +23,11 @@ public class LifeController : MonoBehaviour
             if (_currentHp == 0)
             {
                 Debug.Log($"Il GameObject {gameObject.name} è sceso a 0 HP!");
-                Destroy(gameObject);
+                if (tag.Equals("Player"))
+                {
+                    SceneManager.LoadScene(0);
+                }
+                Destroy(gameObject, 0.1f);
                 }
             }
 

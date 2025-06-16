@@ -70,7 +70,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01, y: -0.51}
+  m_Offset: {x: 0.00999999, y: -0.72325325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -81,7 +81,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 1.4}
+  m_Size: {x: 0.8, y: 0.80349356}
   m_EdgeRadius: 0
 --- !u!50 &7304995305166962733
 Rigidbody2D:
@@ -91,13 +91,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841593700176663669}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHp: 10
-  _maxHp: 50
+  _maxHp: 30
   _fullHpOnStart: 1
 --- !u!210 &788753713636093104
 SortingGroup:
@@ -147,7 +147,7 @@ SortingGroup:
   m_GameObject: {fileID: 841593700176663669}
   m_Enabled: 1
   m_SortingLayerID: 184224249
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &7283074335256909285
@@ -347,6 +347,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1185215602774106997, guid: dfaa0217b16d14f3fa71227727dacd73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327804447354396304, guid: dfaa0217b16d14f3fa71227727dacd73, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1801337037840382960, guid: dfaa0217b16d14f3fa71227727dacd73, type: 3}
