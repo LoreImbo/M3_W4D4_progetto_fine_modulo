@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    [SerializeField] private GameObject weaponPrefab;
+    [SerializeField] private GameObject _weaponPrefab;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -17,7 +17,7 @@ public class Pickup : MonoBehaviour
                 }
             }
 
-            Instantiate(weaponPrefab, weaponHolder.position, Quaternion.identity, weaponHolder);
+            Instantiate(_weaponPrefab, weaponHolder.position, Quaternion.identity, weaponHolder);
 
             Destroy(gameObject);
         }

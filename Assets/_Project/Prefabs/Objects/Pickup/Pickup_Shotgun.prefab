@@ -20,13 +20,17 @@ PrefabInstance:
       propertyPath: weaponPrefab
       value: 
       objectReference: {fileID: 5033296755897567623, guid: d1bf1c4d09be44b6c8cf830cc0e36f96, type: 3}
+    - target: {fileID: 8500692347506603455, guid: ffaca9c97cc4145879c9f04b1d3d4448, type: 3}
+      propertyPath: _weaponPrefab
+      value: 
+      objectReference: {fileID: 5033296755897567623, guid: d1bf1c4d09be44b6c8cf830cc0e36f96, type: 3}
     - target: {fileID: 8656444157891810031, guid: ffaca9c97cc4145879c9f04b1d3d4448, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.73
+      value: -1.91
       objectReference: {fileID: 0}
     - target: {fileID: 8656444157891810031, guid: ffaca9c97cc4145879c9f04b1d3d4448, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3
+      value: -8.99
       objectReference: {fileID: 0}
     - target: {fileID: 8656444157891810031, guid: ffaca9c97cc4145879c9f04b1d3d4448, type: 3}
       propertyPath: m_LocalPosition.z

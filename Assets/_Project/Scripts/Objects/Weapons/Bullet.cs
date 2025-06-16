@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
         _rb.AddForce(force * _speed, ForceMode2D.Impulse);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) // forse va usato OnCollisionEnter2D
+    private void OnTriggerEnter2D(Collider2D other)
     {
         bool result = other.TryGetComponent<LifeController>(out LifeController life);
         if (result)

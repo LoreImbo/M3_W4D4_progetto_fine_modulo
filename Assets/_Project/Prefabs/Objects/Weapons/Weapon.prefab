@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 831258a86dd4f4aa895f8b2d77f82206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8541900204582412091, guid: ef22a48317cfd4168911416ed23699a0, type: 3}
-  fireRange: 10
-  damage: 3
+  _bulletPrefab: {fileID: 8541900204582412091, guid: ef22a48317cfd4168911416ed23699a0, type: 3}
+  _fireRange: 10
+  _damage: 10

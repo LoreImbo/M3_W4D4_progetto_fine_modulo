@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95fe3f8dfb474aeeb7ffd28945cc7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  _speed: 5
 --- !u!114 &8983657600677539969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +353,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1327804447354396304, guid: dfaa0217b16d14f3fa71227727dacd73, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 8541900204582412091, guid: ef22a48317cfd4168911416ed23699a0, type: 3}
     - target: {fileID: 1801337037840382960, guid: dfaa0217b16d14f3fa71227727dacd73, type: 3}
       propertyPath: m_Name
       value: Weapon

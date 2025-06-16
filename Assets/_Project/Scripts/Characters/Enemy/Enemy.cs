@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float speed = 5;
-    [SerializeField] private int damage = 10;
+    [SerializeField] private float _speed = 5;
+    [SerializeField] private int _damage = 10;
     private Transform _player;
     private Rigidbody2D _rb;
     private LifeController _life;
@@ -39,14 +39,14 @@ public class Enemy : MonoBehaviour
         }
 
         Vector2 direction = (_player.position - transform.position).normalized;
-        _rb.MovePosition(_rb.position + direction * (speed * Time.fixedDeltaTime));
+        _rb.MovePosition(_rb.position + direction * (_speed * Time.fixedDeltaTime));
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<LifeController>().TakeDamage(damage);
+            collision.gameObject.GetComponent<LifeController>().TakeDamage(_damage);
             _life.TakeDamage(_life.GetHp());
         }
     }

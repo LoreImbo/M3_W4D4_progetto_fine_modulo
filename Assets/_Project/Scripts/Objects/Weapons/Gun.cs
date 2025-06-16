@@ -5,9 +5,9 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
 
-    [SerializeField] protected Bullet bulletPrefab;
-    [SerializeField] protected float fireRange = 10;
-    [SerializeField] protected int damage = 10;
+    [SerializeField] protected Bullet _bulletPrefab;
+    [SerializeField] protected float _fireRange = 10;
+    [SerializeField] protected int _damage = 10;
     protected float _fireRate = 0.5f;
     protected float _lastShotTime;
     private Vector2 _lastMoveDirection = Vector2.right;
@@ -46,16 +46,15 @@ public class Gun : MonoBehaviour
         GameObject enemy = FindNearestEnemy();
         if (enemy == null) return;
 
-        if (Vector2.Distance(transform.position, enemy.transform.position) <= fireRange)
+        if (Vector2.Distance(transform.position, enemy.transform.position) <= _fireRange)
         {
             if (Time.time - _lastShotTime > _fireRate)
             {
                 _lastShotTime = Time.time;
                 Vector2 force = enemy.transform.position - transform.position;
                 float angle = Mathf.Atan2(force.y, force.x) * Mathf.Rad2Deg;
-                Bullet b = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, 0, angle));
-                b.ShootBullet(transform.position, force.normalized, damage);
-                //b.ShootBullet(tag, _lastMoveDirection, Damage);
+                Bullet b = Instantiate(_bulletPrefab, transform.position, Quaternion.Euler(0, 0, angle));
+                b.ShootBullet(transform.position, force.normalized, _damage);
             }
         }
     }

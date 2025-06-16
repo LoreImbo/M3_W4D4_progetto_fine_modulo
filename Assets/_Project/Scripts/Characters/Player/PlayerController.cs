@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 5;
+    [SerializeField] private float _speed = 5;
     public Vector2 Direction { get; private set; }
     private Rigidbody2D _rb;
     private float _horizontal;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
         if (Direction != Vector2.zero)
         {
-            _rb.MovePosition(_rb.position + Direction * (speed * Time.fixedDeltaTime));
+            _rb.MovePosition(_rb.position + Direction * (_speed * Time.fixedDeltaTime));
         }
     }
 }
